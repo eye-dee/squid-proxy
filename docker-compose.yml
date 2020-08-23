@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  squid:
+    image: squid:1
+    ports:
+      - 3128:3128
+    volumes:
+      - ./squid-data:/var/spool/squid
+      - ./squid-logs:/var/log/squid/
